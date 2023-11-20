@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Відгуки клієнтів</title>
+</head>
+
+<body>
+    <header>
+        <h1>Відгуки клієнтів</h1>
+    </header>
+
+    <main>
+        <div class="review-form">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">Ваш відгук:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button onclick="submitReview()">Додати відгук</button>
+        </div>
+
+        <div class="reviews-container" id="reviewsContainer">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Токарчук Роман 2023</p>
+    </footer>
+
+    <script>
+        function submitReview() {
+            const name = document.getElementById("name").value;
+            const message = document.getElementById("message").value;
+
+            if (name && message) {
+                const reviewsContainer = document.getElementById("reviewsContainer");
+
+                const reviewDiv = document.createElement("div");
+                reviewDiv.classList.add("review");
+
+                const reviewContent = document.createElement("p");
+                reviewContent.textContent = `${name}: ${message}`;
+
+                reviewDiv.appendChild(reviewContent);
+                reviewsContainer.appendChild(reviewDiv);
+
+                document.getElementById("name").value = "";
+                document.getElementById("message").value = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

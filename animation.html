@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="an.css">
+  <style>
+    .train {
+      position: relative;
+      cursor: pointer;
+      width: 250px; /* Збільшено розмір гіфки */
+      height: 225px; /* Збільшено розмір гіфки */
+      left: 0px;
+      transition: left 5s cubic-bezier(0.0, 0.5, 0.5, 1.0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <img class="train" src="https://media.giphy.com/media/PPdpUZOG2AXbt1BCfB/giphy.gif" onclick="moveTrain()">
+
+  <script>
+    function moveTrain() {
+      var train = document.querySelector('.train');
+      train.style.left = '450px';
+    }
+  </script>
+
+</body>
+
+</html>

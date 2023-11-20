@@ -1,0 +1,115 @@
+  /* Загальні стилі для сторінки */
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Стилі для верхнього меню */
+header {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #949494, #0a0a19);
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, #949494, #0a0a19);
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Стилі для основного контенту */
+main {
+    padding: 20px;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Стилі для форми відгуку */
+.review-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.review-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.review-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    width: calc(100% - 20px);
+}
+
+.review-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    width: calc(100% - 20px);
+}
+
+.review-form button {
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.review-form button:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Стилі для відгуків */
+.reviews-container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.review {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.review p {
+    margin: 0;
+}
